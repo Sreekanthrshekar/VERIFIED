@@ -112,6 +112,34 @@ class Cone():
 
 
 
+class Circle():
+    '''Takes in radius as argument and has methods to calculate
+    diameter, circumference and area of the circle'''
+
+    def __init__(self,radius):
+        self.radius = radius
+
+
+    def diameter(self):
+        '''diameter of a circle = 2*r'''
+        dia = 2*self.radius
+        return f"diameter of the circle for the given radius: {dia}"
+
+
+    def circumference(self):
+        ''' circumference of circle: 2*pi*r'''
+        circum = 2*math.pi*self.radius
+        return f"circumference of circle for the given radius: {circum}"
+
+    def area(self):
+        '''area of circle: pi*r^2'''
+        area = math.pi*(self.radius**2)
+        return f"area of the circle for the given radius: {area}"
+
+
+
+
+
 if __name__ == '__main__':
 
     c = Cylinder(2,3)
@@ -130,3 +158,10 @@ if __name__ == '__main__':
 
     print(cone.volume())
     print(cone.surface_area())
+
+
+    circle1 = Circle(10)
+
+    print(circle1.diameter())
+    print(circle1.circumference())
+    print(circle1.area())
