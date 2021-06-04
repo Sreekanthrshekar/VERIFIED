@@ -12,9 +12,6 @@ class Cylinder():
     ''' This class takes in radius and height and
     can be used to obtain volume and surface area of the cylinder'''
 
-
-
-
     def __init__(self,height=1,radius=1):
 
         self.height = height
@@ -35,10 +32,7 @@ class Cylinder():
         sur_area = (2*(math.pi)*(self.radius)*(self.height)) + (2*sa_top_bottom)
         return f" surface area of cylinder: {sur_area} "
 
-c = Cylinder(2,3)
 
-print(c.volume())
-print(c.surface_area())
 
 
 
@@ -75,10 +69,11 @@ class Line():
         slop = (y_2-y_1)/(x_2-x_1)
         return f"slope of the line formed: {slop}"
 
-li = Line((3,2),(8,10))
 
-print(li.distance())
-print(li.slope())
+
+
+
+
 
 #create a class named 'Cone' which takes in radius and height as aguments and
 # has the following methods: volume of a cone, surface area of the cone
@@ -115,7 +110,23 @@ class Cone():
         return f'surface area of cone: {sur_area}'
 
 
-cone = Cone(radius=1, height=3)
 
-print(cone.volume())
-print(cone.surface_area())
+
+if __name__ == '__main__':
+
+    c = Cylinder(2,3)
+
+    print(c.volume())
+    print(c.surface_area())
+
+
+
+    li = Line((3,2),(8,10))
+    print(li.distance())
+    print(li.slope())
+
+
+    cone = Cone(radius=1, height=3)
+
+    print(cone.volume())
+    print(cone.surface_area())
