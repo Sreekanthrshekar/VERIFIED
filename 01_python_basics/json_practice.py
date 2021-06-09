@@ -21,3 +21,8 @@ people_string = '''
 
 data = json.loads(people_string)
 print(data) 
+
+print(data['people'])
+
+for i in data['people']:
+    print(i['name'])
