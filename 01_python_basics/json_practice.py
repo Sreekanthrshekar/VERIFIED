@@ -1,6 +1,8 @@
+'''' THis document deals with json to python and vice versa'''
+
 import json
 
-people_string = '''
+PEOPLE_STRING = '''
 {
     "people": [
         {
@@ -19,10 +21,11 @@ people_string = '''
 }
 '''
 
-data = json.loads(people_string)
-print(data) 
+data = json.loads(PEOPLE_STRING)
+print(data)
 
 print(data['people'])
 
 for i in data['people']:
     print(i['name'])
+    
