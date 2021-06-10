@@ -26,6 +26,10 @@ print(data)
 
 print(data['people'])
 
-for i in data['people']:
-    print(i['name'])
+for person in data['people']:
+    del person['phone']
+
+new_string = json.dumps(data, indent =2)
+
+print(new_string)  
     
