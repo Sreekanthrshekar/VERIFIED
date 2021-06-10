@@ -29,7 +29,13 @@ print(data['people'])
 for person in data['people']:
     del person['phone']
 
-new_string = json.dumps(data, indent =2)
 
-print(new_string)  
-    
+# indent to format the view
+
+new_string1 = json.dumps(data, indent =2)
+
+print(new_string1)
+
+#sort the keys 
+new_string2 = json.dumps(data, indent=2, sort_keys=True)
+print(new_string2)
