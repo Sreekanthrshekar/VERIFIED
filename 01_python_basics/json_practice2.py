@@ -4,7 +4,6 @@ import json
 
 with open('country_by_capital.json') as f:
     data = json.load(f)
-    
+
 for country in data:
     print(country)
-    
