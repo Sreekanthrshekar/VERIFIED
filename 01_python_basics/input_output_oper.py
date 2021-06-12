@@ -28,6 +28,7 @@ print(content[1])
 
 #accessing the word 'purpose' in second line
 print(content[1][9:16])
+
 #closing a file
 myfile.close()
 
@@ -49,4 +50,13 @@ with open('/home/user/Verified/01_python_basics/new_test.txt', mode='r') as fi:
 
 print(fil)
 
-#
+# append
+
+with open('/home/user/Verified/01_python_basics/new_test.txt', mode='a') as f:
+    f.write('\nThis line was appended using append mode')
+
+# cross-checking whether it was appended
+with open('/home/user/Verified/01_python_basics/new_test.txt', mode='r') as fi:
+    fil = fi.read()
+
+print(fil)
