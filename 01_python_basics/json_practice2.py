@@ -2,8 +2,8 @@
 
 import json
 
-with open('country_by_capital.json') as f:
+with open('/home/user/Verified/01_python_basics/country_by_capital.json') as f:
     data = json.load(f)
 
 for country in data:
-    print(country)
+    print(country['city'])
