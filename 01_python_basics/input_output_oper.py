@@ -30,3 +30,11 @@ print(content[1])
 print(content[1][9:16])
 #closing a file
 myfile.close()
+
+# with open(file)
+
+with open('/home/user/Verified/01_python_basics/test.txt') as file:
+    content1 = file.readlines()
+
+#printing word 'practice' from second line
+print(content1[1][31:39])
