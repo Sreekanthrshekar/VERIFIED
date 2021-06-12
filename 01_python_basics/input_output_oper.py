@@ -36,5 +36,17 @@ myfile.close()
 with open('/home/user/Verified/01_python_basics/test.txt') as file:
     content1 = file.readlines()
 
-#printing word 'practice' from second line
+# printing word 'practice' from second line
 print(content1[1][31:39])
+
+# write
+with open('/home/user/Verified/01_python_basics/new_test.txt',mode='w') as f:
+    f.write('This was created using write mode.\nThis will be used to practice append also.')
+
+# cross-checking whether it was written
+with open('/home/user/Verified/01_python_basics/new_test.txt', mode='r') as fi:
+    fil = fi.read()
+
+print(fil)
+
+#
