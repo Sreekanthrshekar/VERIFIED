@@ -28,3 +28,5 @@ print(content[1])
 
 #accessing the word 'purpose' in second line
 print(content[1][9:16])
+#closing a file
+myfile.close()
