@@ -17,7 +17,7 @@ def apply_discount_new(product, discount):
     '''This function takes in two arguments:
     a dictionary 'product' and 'discount' value in decimal and return the price'''
     price = float(product['price']*(1.0-discount))
-    assert 0 <= price <= product['price']
+    assert 0 <= price <= product['price'], 'For the given discount, price is less than zero'
     return price
 
 print(apply_discount_new(watch,DISCOUNT))
