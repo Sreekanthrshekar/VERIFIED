@@ -5,7 +5,7 @@ def sentence_case(text):
     #splitting text into individual sentences
     text_list = text.split('.')
     
-    #defining a new variable
+    #defining an empty variable
     result = ''
     
     #capitalizing each sentence and merging it to the execute_result
@@ -17,8 +17,9 @@ def sentence_case(text):
     result = result[:-1]
     return result
 
+if __name__ == '__main__':
+    
+    text1 = '''this is to test the function.Here i'm not using the capitalization.the function should take care of it.'''
 
-text1 = '''this is to test the function.Here i'm not using the capitalization.the function should take care of it.'''
-
-print(f"Original text:\n{text1}")
-print(f"Corrected text:\n{sentence_case(text1)}")
+    print(f"Original text:\n{text1}")
+    print(f"Corrected text:\n{sentence_case(text1)}")
