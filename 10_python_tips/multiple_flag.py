@@ -7,3 +7,11 @@ if NUM_1 ==1 or NUM_2 == 1 or NUM_3 ==1:
 
 if 1 in (NUM_1,NUM_2,NUM_3):
     print('passed')
+
+# boolean condition
+if NUM_1 or NUM_2 or NUM_3:
+    print('passed')
+
+if any((NUM_1,NUM_2,NUM_3)):
+    print('passed')
+
