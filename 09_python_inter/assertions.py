@@ -39,7 +39,7 @@ print(multiple_of_seven(NUMBER))
 
 def multiple_of_seven_1(num):
     '''This function takes in a number and checks whether it is a multiple of seven'''
-    assert num%7 == 0, 'This is not a multiple of seven' 
+    assert num%7 == 0, 'This is not a multiple of seven'
     return f"{num} is multiple of seven"
 
 print(multiple_of_seven_1(NUMBER))
