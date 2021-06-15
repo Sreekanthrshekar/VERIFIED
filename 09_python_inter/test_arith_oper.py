@@ -1,7 +1,10 @@
+'''This document is used to test the arith_oper module'''
+
 import unittest
 import arith_oper
 
 class TestArithOper(unittest.TestCase):
+    '''This class has methods to test various arithmatic operations'''
 
     def test_add(self):
         '''test add functionality'''
@@ -38,11 +41,11 @@ class TestArithOper(unittest.TestCase):
         self.assertEqual(arith_oper.divide(-5,10), -0.5)
         self.assertEqual(arith_oper.divide(-5,5), -1)
         self.assertEqual(arith_oper.divide(-5,-5), 1)
-        
+
         with self.assertRaises(ValueError):
             arith_oper.divide(10,0)
-    
-    
+
+
 
 if __name__ == '__main__':
     unittest.main()
