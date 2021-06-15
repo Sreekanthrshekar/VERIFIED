@@ -1,4 +1,4 @@
-''' This documentation shows how to use unpacking generalisation 
+''' This documentation shows how to use unpacking generalisation
 to merge two dictionaries'''
 
 # merging two dictionaies without overlapping keys
