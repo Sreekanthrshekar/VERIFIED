@@ -1,2 +1,2 @@
-hello, world!
-ok,bye!
+This is an overwritten sentence.
+Thanks again..
