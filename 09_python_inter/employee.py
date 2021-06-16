@@ -21,8 +21,8 @@ class Employee():
         ''' creates full name from first and last name '''
         return f"{self.first_name} {self.last_name}"
     
+    
     def apply_raise(self):
         ''' returns salary after the raise is applied '''
         self.salary = float(self.salary*self.raise_amount)
         return self.salary
-    
