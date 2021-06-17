@@ -54,5 +54,7 @@ users = [
     {'name': 'Earl', 'join_date': '2015-06-10', 'age':51},
 ]
 
-users_sorted = sorted(users, key =itemgetter('join_date'))
-print(users_sorted)
+users_sorted_1 = sorted(users, key =itemgetter('join_date'))
+print(users_sorted_1)
+users_sorted_2 = sorted(users, key =itemgetter('age'), reverse=True)
+print(users_sorted_2)
