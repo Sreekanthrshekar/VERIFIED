@@ -43,3 +43,16 @@ print(student_record_new_sorted)
 # step2 - sort by primary sorting - sorting by higher mark
 student_record_new_sorted = sorted(student_record_new_sorted,key=itemgetter(1), reverse=True)
 print(student_record_new_sorted)
+
+# List of Dictionaries
+
+users = [
+    {'name': 'Antony', 'join_date': '2017-03-09', 'age':29},
+    {'name': 'Britney', 'join_date': '2018-05-26', 'age':21 },
+    {'name': 'Jeff', 'join_date': '2018-07-14', 'age': 30},
+    {'name': 'Ned', 'join_date': '2017-02-01', 'age': 35},
+    {'name': 'Earl', 'join_date': '2015-06-10', 'age':51},
+]
+
+users_sorted = sorted(users, key =itemgetter('join_date'))
+print(users_sorted)
