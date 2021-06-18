@@ -22,3 +22,18 @@ print(nums_copy_1)
 
 nums_copy_2 = [n for n in nums]
 print(nums_copy_2)
+
+#EXAMPLE 2
+
+# Method 1 -  usual
+
+nums_square_1 = []
+for n in nums:
+    nums_square_1.append(n**2)
+
+print(nums_square_1)
+
+# Method 2 -  list comprehension
+
+nums_square_2 = [n**2 for n in nums]
+print(nums_square_2)
