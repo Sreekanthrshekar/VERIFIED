@@ -37,3 +37,30 @@ print(nums_square_1)
 
 nums_square_2 = [n**2 for n in nums]
 print(nums_square_2)
+
+#LIST COMPREHENSION WITH CONDITION
+
+# list of even numbers from nums
+
+# Method 1: usual
+
+nums_even_1 = []
+for n in nums:
+    if n%2 == 0:
+        nums_even_1.append(n)
+
+print(nums_even_1)
+
+# Method 2 :  list comprehension
+
+# step 1: write the first sentence of for loop inside a list
+# nums_even_2 = [for n in nums]
+
+# step 2: add the condition 
+# nums_even_2 = [for n in nums if n%2 == 0]
+
+# step 3: add in front of that, the result we want (here n)
+# nums_copy_2 = [n for n in nums if n%2 == 0]
+
+nums_even_2 = [n for n in nums if n%2 ==0 ]
+print(nums_even_2)
