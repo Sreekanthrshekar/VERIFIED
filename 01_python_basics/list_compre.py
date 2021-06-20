@@ -64,3 +64,19 @@ print(nums_even_1)
 
 nums_even_2 = [n for n in nums if n%2 ==0 ]
 print(nums_even_2)
+
+# A tuple formed from each characters from two strings - nested for loops
+
+# Method 1 - usual
+
+my_list_1=[]
+for letter in 'abcd':
+    for num in '0123':
+        my_list_1.append((letter, num))
+
+print(my_list_1)
+
+# Method 2 -  list comprehension
+my_list_2 = [(letter, num) for letter in 'abcd' for num in '0123']
+print(my_list_2)
+
