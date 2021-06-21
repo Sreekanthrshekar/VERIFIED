@@ -19,6 +19,10 @@ import logging as logging
 # CRITICAL:   A serious error, indicating that the program itself may be
             # unable to continue running.
 
+
+
+logging.basicConfig(level=logging.DEBUG)
+
 def add(num_1,num_2):
     ''' Add function '''
     return num_1 + num_2
