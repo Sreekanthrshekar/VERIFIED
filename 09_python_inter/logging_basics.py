@@ -21,7 +21,7 @@ import logging as logging
 
 
 
-logging.basicConfig(level=logging.DEBUG)
+logging.basicConfig(filename = './09_python_inter/arith.log',level=logging.DEBUG)
 
 def add(num_1,num_2):
     ''' Add function '''
@@ -41,8 +41,8 @@ def divide(num_1,num_2):
         raise ValueError('cannot divide by zero')
     return num_1 / num_2
 
-NUM_1 =10
-NUM_2 = 5
+NUM_1 =100
+NUM_2 =20
 
 add_result = add(NUM_1,NUM_2)
 logging.debug(f"Add: {NUM_1} + {NUM_2} = {add_result}")
