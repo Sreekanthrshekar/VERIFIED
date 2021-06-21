@@ -23,7 +23,7 @@ import logging as logging
 # LOG RECORD ATTRIBUTES - https://docs.python.org/3/library/logging.html?highlight=logrecord%20attributes
 
 
-logging.basicConfig(filename = './09_python_inter/arith.log',level=logging.DEBUG)
+logging.basicConfig(filename = './09_python_inter/arith.log',level=logging.DEBUG,format='%(levelname)s:%(message)s')
 
 def add(num_1,num_2):
     ''' Add function '''
