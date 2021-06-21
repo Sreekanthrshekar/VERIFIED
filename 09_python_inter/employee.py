@@ -1,4 +1,10 @@
-''' This document contains the custom class Employee ''' 
+''' This document contains the custom class Employee '''
+
+
+import logging
+logging.basicConfig(filename='./09_python_inter/employee.log',level=logging.INFO,
+                    format='%(levelname)s:%(message)s')
+
 
 class Employee():
     ''' Employee Class: 
@@ -10,6 +16,9 @@ class Employee():
         self.first_name = first_name
         self.last_name = last_name
         self.salary = salary
+        
+        logging.info('Created employee: {} {}'.format(self.first_name, self.last_name))
+
     
     @property
     def email(self):
@@ -26,3 +35,8 @@ class Employee():
         ''' returns salary after the raise is applied '''
         self.salary = float(self.salary*self.raise_amount)
         return self.salary
+
+
+if __name__ == '__main__':
+    emp_1 = Employee('John','Smith', 95000)
+
