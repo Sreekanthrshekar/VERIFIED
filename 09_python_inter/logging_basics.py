@@ -1,5 +1,24 @@
 ''' This document demonstrates logging basics '''
 
+import logging as logging
+
+# FIVE LOGGING LEVELS:
+
+# DEBUG: Detailed information, typically of interest only when diagnosing problems
+
+# INFO: Confirmation that things are working as expected.
+
+# WARNING:    An indication that something unexpected happened, 
+            # or indicative of some problem in near future.
+            # (e.g., 'disk space low')
+            # The software is still working as expected.
+
+# ERROR:   Due to a more serious problem, 
+         # the software has not been able to perform some function.
+
+# CRITICAL:   A serious error, indicating that the program itself may be
+            # unable to continue running.
+
 def add(num_1,num_2):
     ''' Add function '''
     return num_1 + num_2
@@ -22,14 +41,15 @@ NUM_1 =10
 NUM_2 = 5
 
 add_result = add(NUM_1,NUM_2)
-print(f"Add: {NUM_1} + {NUM_2} = {add_result}")
+logging.debug(f"Add: {NUM_1} + {NUM_2} = {add_result}")
 
 sub_result = subtract(NUM_1,NUM_2)
-print(f"Subtract: {NUM_1} - {NUM_2} = {sub_result}")
+logging.debug(f"Subtract: {NUM_1} - {NUM_2} = {sub_result}")
 
 mul_result = multiply(NUM_1,NUM_2)
-print(f"Multiply: {NUM_1} * {NUM_2} = {mul_result}")
+logging.debug(f"Multiply: {NUM_1} * {NUM_2} = {mul_result}")
 
 div_result = divide(NUM_1,NUM_2)
-print(f"Divide: {NUM_1} / {NUM_2} = {div_result}")
+logging.debug(f"Divide: {NUM_1} / {NUM_2} = {div_result}")
+
 
