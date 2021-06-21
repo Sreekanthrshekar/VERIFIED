@@ -20,6 +20,8 @@ import logging as logging
             # unable to continue running.
 
 
+# LOG RECORD ATTRIBUTES - https://docs.python.org/3/library/logging.html?highlight=logrecord%20attributes
+
 
 logging.basicConfig(filename = './09_python_inter/arith.log',level=logging.DEBUG)
 
