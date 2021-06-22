@@ -16,3 +16,12 @@ print(os.getcwd())
 print(os.listdir()) # current directory
 
 print(os.listdir('/home/user/Datasets')) 
+
+# Create a new folder in the current directory: Two methods
+
+# Method 1 : create a single folder
+os.mkdir('demo') 
+
+# Method 2: create a folder and then go on to create a sub folder
+
+os.makedirs('demo2/sub_demo')
