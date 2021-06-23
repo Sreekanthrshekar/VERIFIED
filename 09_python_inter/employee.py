@@ -39,6 +39,10 @@ class Employee():
         ''' returns salary after the raise is applied '''
         self.salary = float(self.salary*self.raise_amount)
         return self.salary
+    
+    @classmethod
+    def set_raise_amount(cls, raise_amount):
+        cls.raise_amount = raise_amount
 
 
 if __name__ == '__main__':
@@ -48,4 +52,9 @@ if __name__ == '__main__':
     print(Employee.raise_amount)
     print(emp_1.raise_amount)
     print(emp_2.raise_amount)
-
+    
+    Employee.set_raise_amount(1.1)
+    
+    print(Employee.raise_amount)
+    print(emp_1.raise_amount)
+    print(emp_2.raise_amount)
