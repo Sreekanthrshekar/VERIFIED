@@ -12,3 +12,18 @@ being passed as an argument, returning from a function,
 and assigned to a variable.'''
 
 # Assign a function to a variable
+
+def square(num):
+    return num**2
+
+var_1 = square(5)
+
+print(square) #returns memory location of the function 'square'
+print(var_1) # returns the output
+
+var_2 = square # assigning variable to function
+
+print(square) # returns memory location of the function 'square'
+print(var_2)  # returns memory location of the function 'square'
+
+print(var_2(4)) # the variable acts as a function
