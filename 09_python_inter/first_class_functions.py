@@ -49,3 +49,13 @@ def cube(num):
 # passing cube function as argument
 
 print(my_map(cube, [1,2,3,4]))
+
+# RETURN A FUNCTION FROM ANOTHER FUNCTION
+
+def logger(msg):
+    def log_message():
+        print('Log:', msg)
+    return log_message
+
+log_hello = logger('Hello')
+log_hello()
