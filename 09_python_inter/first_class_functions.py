@@ -27,3 +27,17 @@ print(square) # returns memory location of the function 'square'
 print(var_2)  # returns memory location of the function 'square'
 
 print(var_2(4)) # the variable acts as a function
+
+# pass functions as arguments
+
+    # creating custom map function
+
+def my_map(func,arg_list):
+    result =[]
+    for i in arg_list:
+        result.append(func(i))
+    return result
+
+#cross-checking my_map function
+
+print(my_map(lambda x:x**2, [1,2,3,4]))
