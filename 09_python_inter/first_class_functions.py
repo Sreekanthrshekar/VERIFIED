@@ -41,3 +41,11 @@ def my_map(func,arg_list):
 #cross-checking my_map function
 
 print(my_map(lambda x:x**2, [1,2,3,4]))
+
+# creating cube function
+def cube(num):
+    return num**3
+
+# passing cube function as argument
+
+print(my_map(cube, [1,2,3,4]))
