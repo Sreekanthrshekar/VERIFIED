@@ -14,12 +14,13 @@ and assigned to a variable.'''
 # Assign a function to a variable
 
 def square(num):
+    ''' square function '''
     return num**2
 
-var_1 = square(5)
+VAR_1 = square(5)
 
 print(square) #returns memory location of the function 'square'
-print(var_1) # returns the output
+print(VAR_1) # returns the output
 
 var_2 = square # assigning variable to function
 
@@ -33,6 +34,7 @@ print(var_2(4)) # the variable acts as a function
     # creating custom map function
 
 def my_map(func,arg_list):
+    ''' custom map function '''
     result =[]
     for i in arg_list:
         result.append(func(i))
@@ -44,6 +46,7 @@ print(my_map(lambda x:x**2, [1,2,3,4]))
 
 # creating cube function
 def cube(num):
+    ''' cube function '''
     return num**3
 
 # passing cube function as argument
@@ -54,7 +57,9 @@ print(my_map(cube, [1,2,3,4]))
 
 # example 1
 def logger(msg):
+    ''' logger function '''
     def log_message():
+        ''' prints out log message '''
         print('Log:', msg)
     return log_message
 
@@ -64,7 +69,9 @@ log_hello()
 # example 2
 
 def html_tag(tag):
+    ''' creates appropriate tag '''
     def wrap_text(msg):
+        ''' wraps required text inside specified tag '''
         print(f'<{tag}>{msg}</{tag}>')
     return wrap_text
 
