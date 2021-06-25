@@ -52,6 +52,7 @@ print(my_map(cube, [1,2,3,4]))
 
 # RETURN A FUNCTION FROM ANOTHER FUNCTION
 
+# example 1
 def logger(msg):
     def log_message():
         print('Log:', msg)
@@ -59,3 +60,17 @@ def logger(msg):
 
 log_hello = logger('Hello')
 log_hello()
+
+# example 2
+
+def html_tag(tag):
+    def wrap_text(msg):
+        print(f'<{tag}>{msg}</{tag}>')
+    return wrap_text
+
+tag_h1 = html_tag('h1')
+tag_h1('Headline 1')
+tag_h1('Headline 2')
+
+tag_p = html_tag('p')
+tag_p('this is a test paragraph')
