@@ -28,3 +28,17 @@ custom_func()   # a closure : an inner function which remembers
                 # in the local scope where it was created even 
                 # after the outer function has finished executing.
 
+# Example 2 -  closures with parameters
+
+def outer_func(msg):
+    message = msg
+    
+    def inner_func():
+        print(message)
+        
+    return inner_func
+
+
+wow_func = outer_func('Wow')
+
+wow_func() 
