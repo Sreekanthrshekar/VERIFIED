@@ -18,8 +18,7 @@ def outer_func(msg):
 wow_func = outer_func('Wow')
 wow_func()
 
-def display():
-    print('display function ran')
+
 
 # a simple custom decorator message
 
@@ -27,11 +26,21 @@ def decorator_func(original_func):
     ''' decorator function '''
     def wrapper_func():
         ''' wrapper function '''
+        print('This is additionally added by the wrapper function')
         return original_func()
     return wrapper_func
 
-dec_display = decorator_func(display)
+
+def display1():
+    print('display function ran')
+
+dec_display = decorator_func(display1)
 dec_display()
 
+# @decorator_func above display2 is same as "display2 = decorator_func(display2)""
 
+@decorator_func
+def display2():
+    print('display function is being run here')
 
+display2()
