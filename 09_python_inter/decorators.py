@@ -65,6 +65,7 @@ def decorator_func2(original_func):
 
 @decorator_func2
 def display_info2(name,age):
+    ''' This display function has arguments '''
     print(f'display_info2 ran with the arguments ({name}, {age})')
 
 display_info2('Jane', 21)
@@ -73,6 +74,35 @@ display_info2('Jane', 21)
 
 @decorator_func1
 def display_info3(name,age):
+    ''' This display function has arguments '''
     print(f'display_info3 ran with the arguments ({name}, {age})')
 
-display_info3('Jane', 21)
+#display_info3('Jane', 21)  # uncomment to run this & find that it doesn't work
+
+# CLASSES AS DECORATORS
+
+class decorator_class(object):
+    ''' This is a decorator class '''
+    
+    def __init__(self, original_func):
+        self.original_func = original_func
+        
+    # mimicking wrapper adding functionality using call method
+    
+    def __call__(self,*args,**kwargs):
+        print('call method executed this line')
+        return self.original_func(*args,**kwargs)
+    
+
+@decorator_class
+def display3():
+    print('display3 function is being run here')
+
+display3()
+
+# original function with arguments
+@decorator_class
+def display_info4(name,age):
+    print(f'display_info4 ran with arguments ({name}, {age})')
+
+display_info4('John', 25)
