@@ -1,4 +1,4 @@
-''' This document demonstrates the use of get() method in dictionary 
+''' This document demonstrates the use of get() method in dictionary
 and the option to set a default value '''
 
 name_for_userid = {
