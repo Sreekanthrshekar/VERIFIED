@@ -1,4 +1,4 @@
 {
-    "python.pythonPath": "/home/user/anaconda3/envs/pers_proj/bin/python",
+    "python.defaultInterpreterPath": "/home/user/anaconda3/envs/pers_proj/bin/python",
     "python.linting.pylintArgs": ["--logging-format-style=new"]
 }
