@@ -11,4 +11,3 @@ print(json.dumps(my_dict, indent=4,sort_keys=True))
 
 print(my_dict['a']) # syntax to access value using key
 print(my_dict.__getitem__('')) # what actually happens under hood
-
