@@ -22,3 +22,10 @@ print(my_car.fueltype)
 # create ordinary tuple from namedtuple
 tup = tuple(my_car)
 print(tup)
+
+# tuple unpacking
+color,milage,fueltype = my_car
+print(color,milage,fueltype)
+
+# function argument unpacking
+print(*my_car)
