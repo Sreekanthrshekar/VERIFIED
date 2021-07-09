@@ -15,13 +15,24 @@ print(os.getcwd())
 
 print(os.listdir()) # current directory
 
-print(os.listdir('/home/user/Datasets')) 
+print(os.listdir('/home/user/Datasets'))
 
 # Create a new folder in the current directory: Two methods
 
 # Method 1 : create a single folder
-os.mkdir('demo') 
+os.mkdir('demo1')
+
 
 # Method 2: create a folder and then go on to create a sub folder
 
-os.makedirs('demo2/sub_demo')
+os.makedirs('demo21/sub_demo1')
+
+# REMOVE DIRECTORIES
+
+# Method 1: remove a single directory
+
+os.rmdir('demo1')
+
+# Method 2: remove a dicrectory and sub directories
+
+os.removedirs('demo21/sub_demo1')
