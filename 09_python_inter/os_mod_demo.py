@@ -36,3 +36,14 @@ os.rmdir('demo1')
 # Method 2: remove a dicrectory and sub directories
 
 os.removedirs('demo21/sub_demo1')
+
+
+print('***********************************************************************')
+
+print(os.listdir())
+
+print('***********************************************************************')
+
+os.rename('Signature.jpg','My_sign.jpg')
+
+print(os.listdir())
