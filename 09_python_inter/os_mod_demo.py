@@ -1,6 +1,7 @@
 ''' This document demonstrates various methods and attributes in os module '''
 
 import os
+from datetime import datetime
 
 # Check the current working directory
 print(os.getcwd())
@@ -44,6 +45,19 @@ print(os.listdir())
 
 print('***********************************************************************')
 
-os.rename('Signature.jpg','My_sign.jpg')
+# rename files
+#os.rename('Signature.jpg','My_sign.jpg')
 
 print(os.listdir())
+
+print('***********************************************************************')
+
+# last modified time of a file
+
+print(os.stat('My_sign.jpg'))
+
+print('***********************************************************************')
+
+last_modified_time = os.stat('My_sign.jpg').st_mtime
+
+print(datetime.fromtimestamp(last_modified_time))
