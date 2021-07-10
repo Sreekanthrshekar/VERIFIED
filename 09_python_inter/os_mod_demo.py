@@ -155,3 +155,9 @@ print('''
       
       ''')
 print(os.path.isfile('/home/user/Desktop'))
+print('''
+      
+      ''')
+
+# splitting the extension
+print(os.path.splitext('./temp/sree/draw.jpg'))
