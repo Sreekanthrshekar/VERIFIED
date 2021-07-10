@@ -140,4 +140,4 @@ print(basename)
 print('''
       
       ''')
-
+print(os.path.exists('./temp/sree/draw.jpg'))
