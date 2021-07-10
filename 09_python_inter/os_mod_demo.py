@@ -131,3 +131,13 @@ print(os.path.dirname('./temp/sree/draw.jpg'))
 print('''
       
       ''')
+
+#obtain both basename and directory name
+
+dirname,basename = os.path.split('./temp/sree/draw.jpg')
+print(dirname)
+print(basename)
+print('''
+      
+      ''')
+
