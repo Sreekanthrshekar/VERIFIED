@@ -103,9 +103,16 @@ for dirpath,dirnames,filenames in os.walk('/home/user/Desktop/demo2'):
     print('Current path: ', dirpath)
     print('Directories: ', dirnames)
     print('Files:', filenames)
-    print('''
-          
-          ''')
+    print()
 
 # access environment variables
 print(os.environ.get('HOME'))
+
+print('''
+      
+      ''')
+
+# create a proper file path
+
+filepath = os.path.join(os.environ.get('HOME'),'os_join_test_file.txt')
+print(filepath)
