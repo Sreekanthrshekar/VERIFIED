@@ -140,4 +140,5 @@ print(basename)
 print('''
       
       ''')
+# check whether path exists
 print(os.path.exists('./temp/sree/draw.jpg'))
