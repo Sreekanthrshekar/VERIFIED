@@ -116,3 +116,18 @@ print('''
 
 filepath = os.path.join(os.environ.get('HOME'),'os_join_test_file.txt')
 print(filepath)
+print('''
+      
+      ''')
+# access basename and directory name
+
+#basename
+print(os.path.basename('./temp/sree/draw.jpg'))
+print('''
+      
+      ''')
+# directory name
+print(os.path.dirname('./temp/sree/draw.jpg'))
+print('''
+      
+      ''')
