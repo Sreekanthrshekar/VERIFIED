@@ -92,3 +92,17 @@ print('''
       
       ''')
 
+# directory tree with directories and files in path
+
+#os.walk outputs a tuple with three elements: 
+# dirpath, 
+# directories in the path,
+# files in the path
+
+for dirpath,dirnames,filenames in os.walk(os.getcwd()):
+    print('Current path: ', dirpath)
+    print('Directories: ', dirnames)
+    print('Files:', filenames)
+    print('''
+          
+          ''')
