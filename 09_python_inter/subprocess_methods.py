@@ -16,3 +16,8 @@ print('''
 # capture the output in a variable
 list_dir = subprocess.run(['ls','-la'], check=True,capture_output=True)
 print(list_dir.stdout) #output is captured in bytes
+print('''
+     ''')
+
+# decoding the output from bytes
+print(list_dir.stdout.decode())
