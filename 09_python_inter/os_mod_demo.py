@@ -142,3 +142,16 @@ print('''
       ''')
 # check whether path exists
 print(os.path.exists('./temp/sree/draw.jpg'))
+
+print('''
+      
+      ''')
+
+#check whether it's a file or directory
+
+print(os.path.isdir('/home/user/Desktop'))
+
+print('''
+      
+      ''')
+print(os.path.isfile('/home/user/Desktop'))
