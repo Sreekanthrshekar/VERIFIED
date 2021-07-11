@@ -1,0 +1,24 @@
+total 100
+drwxr-xr-x  20 user user  4096 Jun 21 17:24 .
+drwxr-xr-x 101 user user 12288 Jul 11 18:08 ..
+drwxr-xr-x   3 user user  4096 Jun 19 11:36 01_python_basics
+drwxr-xr-x   3 user user  4096 Jun  3 22:09 02_Numpy
+drwxr-xr-x   3 user user  4096 Jun  6 08:28 03_pandas
+drwxr-xr-x   3 user user  4096 Jun  4 12:03 04_MATPLOTLIB_AND_SEABORN
+drwxr-xr-x   3 user user  4096 Jun  3 22:08 05_CLASSIFICATION
+drwxr-xr-x   3 user user  4096 Jun  3 22:06 06_CLUSTERING
+drwxr-xr-x   3 user user  4096 Jun  3 22:09 07_REGRESSION
+drwxr-xr-x   3 user user  4096 Dec  5  2020 08_deep_learning
+drwxrwxr-x   3 user user  4096 Jul 11 19:42 09_python_inter
+drwxrwxr-x   2 user user  4096 Jul  5 21:58 10_python_tips
+drwxr-xr-x   8 user user  4096 Jul 10 23:38 .git
+-rw-r--r--   1 user user  1799 Jul 22  2020 .gitignore
+-rw-rw-r--   1 user user    48 Jun 15 13:44 hello.txt
+drwxrwxr-x   2 user user  4096 Jun  6 08:28 .ipynb_checkpoints
+drwxrwxr-x   3 user user  4096 Jun  5 14:06 Learn_through_challenges
+drwxrwxr-x   2 user user  4096 Jun  3 22:00 Python ETL
+-rw-r--r--   1 user user    10 Jul 22  2020 README.md
+drwxr-xr-x   2 user user  4096 Jul 31  2020 Time_series
+drwxrwxr-x   2 user user  4096 Jun  4 16:29 .virtual_documents
+drwxrwxr-x   2 user user  4096 Jun  4 10:49 .vscode
+drwxrwxr-x   2 user user  4096 Jun  3 22:00 Webscraping
