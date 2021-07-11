@@ -1,0 +1,9 @@
+This
+is
+a
+demo
+text
+to
+test
+cat
+function
