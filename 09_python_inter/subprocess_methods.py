@@ -14,10 +14,19 @@ print('''
      ''')
 
 # capture the output in a variable
+
 list_dir = subprocess.run(['ls','-la'], check=True,capture_output=True)
 print(list_dir.stdout) #output is captured in bytes
 print('''
      ''')
 
-# decoding the output from bytes
+# decoding the output from bytes: Method 1
 print(list_dir.stdout.decode())
+
+print('''
+      
+      ''')
+
+# decoding the output from bytes: Method 2
+list_dir = subprocess.run(['ls','-la'], check=True,capture_output=True,text=True)
+print(list_dir.stdout)
