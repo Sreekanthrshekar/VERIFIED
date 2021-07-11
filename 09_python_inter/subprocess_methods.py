@@ -59,8 +59,16 @@ print('''
       
       ''')
 # using 'check' to identify when external command fails
-list_dir2 = subprocess.run(['ls','-la','./09_python_intere'],check=True,
+list_dir2 = subprocess.run(['ls','-la','./09_python_inter'],check=True,
                            capture_output=True, text=True)
 print(list_dir2.returncode)
 print(list_dir2.stderr)
 print(list_dir2.stdout)
+
+print('''
+      
+      ''')
+# cat function of linux
+output_string = subprocess.run('cat ./09_python_inter/demo_text.txt',check=True,
+                               capture_output=True, text=True, shell=True)
+print(output_string.stdout)
