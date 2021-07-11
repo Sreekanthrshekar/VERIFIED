@@ -11,7 +11,7 @@ drwxr-xr-x   3 user user  4096 Jun  3 22:09 07_REGRESSION
 drwxr-xr-x   3 user user  4096 Dec  5  2020 08_deep_learning
 drwxrwxr-x   3 user user  4096 Jul 11 19:42 09_python_inter
 drwxrwxr-x   2 user user  4096 Jul  5 21:58 10_python_tips
-drwxr-xr-x   8 user user  4096 Jul 10 23:38 .git
+drwxr-xr-x   8 user user  4096 Jul 11 19:44 .git
 -rw-r--r--   1 user user  1799 Jul 22  2020 .gitignore
 -rw-rw-r--   1 user user    48 Jun 15 13:44 hello.txt
 drwxrwxr-x   2 user user  4096 Jun  6 08:28 .ipynb_checkpoints
