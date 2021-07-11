@@ -80,3 +80,11 @@ print('''
 grep_out = subprocess.run('grep -n test ./09_python_inter/demo_text.txt',check=True,
                                capture_output=True, text=True, shell=True)
 print(grep_out.stdout)
+
+print('''
+      
+      ''')
+# pipe function of linux to combine cat and grep
+grep_cat_pipe = subprocess.run('cat ./09_python_inter/demo_text.txt | grep -n test',
+                               check=True,shell=True,capture_output=True, text=True)
+print(grep_cat_pipe.stdout)
