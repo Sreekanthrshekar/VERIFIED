@@ -49,7 +49,17 @@ print('''
       
       ''')
 # checking whether external command failed
-list_dir2 = subprocess.run(['ls','-la','./09_python_intere'],
+list_dir2 = subprocess.run(['ls','-la','./09_python_inter'],
+                           capture_output=True, text=True)
+print(list_dir2.returncode)
+print(list_dir2.stderr)
+print(list_dir2.stdout)
+
+print('''
+      
+      ''')
+# using 'check' to identify when external command fails
+list_dir2 = subprocess.run(['ls','-la','./09_python_intere'],check=True,
                            capture_output=True, text=True)
 print(list_dir2.returncode)
 print(list_dir2.stderr)
