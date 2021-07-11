@@ -72,3 +72,11 @@ print('''
 output_string = subprocess.run('cat ./09_python_inter/demo_text.txt',check=True,
                                capture_output=True, text=True, shell=True)
 print(output_string.stdout)
+
+print('''
+      
+      ''')
+# grep function of linux
+grep_out = subprocess.run('grep -n test ./09_python_inter/demo_text.txt',check=True,
+                               capture_output=True, text=True, shell=True)
+print(grep_out.stdout)
