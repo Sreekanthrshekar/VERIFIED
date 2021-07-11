@@ -29,7 +29,7 @@ print('''
 
 # decoding the output from bytes: Method 2
 list_dir = subprocess.run(['ls','-la'], check=True,capture_output=True,text=True)
-print('list_dir: \n', list_dir.stdout)
+print('list_dir:\n', list_dir.stdout)
 
 print('''
       
@@ -44,3 +44,13 @@ print('''
 # redirecting stdout to a file
 with open('./09_python_inter/output.txt', 'w') as f:
     subprocess.run(['ls','-la'], check=True, stdout=f,text=True)
+
+print('''
+      
+      ''')
+# checking whether external command failed
+list_dir2 = subprocess.run(['ls','-la','./09_python_intere'],
+                           capture_output=True, text=True)
+print(list_dir2.returncode)
+print(list_dir2.stderr)
+print(list_dir2.stdout)
