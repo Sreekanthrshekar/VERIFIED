@@ -46,6 +46,13 @@ print('''
 
 # first five cards
 print(deck[:5])
-
+print('''
+      ''')
 #all aces
 print(deck[12::13])
+print('''
+      ''')
+
+# iterating through deck
+for card in deck:
+    print(card)
