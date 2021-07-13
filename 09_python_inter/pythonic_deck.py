@@ -13,8 +13,8 @@ class FrenchDeck:
     suits = 'spades clubs diamonds hearts'.split()
 
     def __init__(self):
-        self._cards = [Card(rank,suit) for rank in self.suits
-                       for suit in self.ranks]
+        self._cards = [Card(rank,suit) for suit in self.suits
+                       for rank in self.ranks]
 
     def __len__(self):
         return len(self._cards)
@@ -65,3 +65,5 @@ for card in reversed(deck):
 
 # methods and attributes of deck
 print(dir(deck))
+
+
