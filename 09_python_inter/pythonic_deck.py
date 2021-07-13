@@ -46,3 +46,6 @@ print('''
 
 # first five cards
 print(deck[:5])
+
+#all aces
+print(deck[12::13])
