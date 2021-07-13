@@ -56,3 +56,9 @@ print('''
 # iterating through deck
 for card in deck:
     print(card)
+print('''
+      ''')
+
+# iterating deck in reverse
+for card in reversed(deck):
+    print(card)
