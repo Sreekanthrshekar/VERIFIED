@@ -62,3 +62,6 @@ print('''
 # iterating deck in reverse
 for card in reversed(deck):
     print(card)
+
+# methods and attributes of deck
+print(dir(deck))
