@@ -2,7 +2,7 @@
 dunder methods: __len__ and __getitem__ '''
 
 from collections import namedtuple
-
+from random import choice
 
 Card = namedtuple('Card','rank suit')
 
@@ -33,5 +33,13 @@ print('''
 
 print(deck[0]) # first card
 print(deck[-1]) # last card
+print('''
+      ''')
+
+# choosing random card from deck
+print(choice(deck))
+print(choice(deck))
+print(choice(deck))
+print(choice(deck))
 print('''
       ''')
