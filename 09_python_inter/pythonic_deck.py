@@ -62,8 +62,13 @@ print('''
 # iterating deck in reverse
 for card in reversed(deck):
     print(card)
+print('''
+      ''')
 
 # methods and attributes of deck
 print(dir(deck))
+print('''
+      ''')
 
-
+# Verifying presence of a card in the Deck
+print(Card('2','spades') in deck)
