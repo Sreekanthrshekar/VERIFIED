@@ -3,6 +3,7 @@ dunder methods: __len__ and __getitem__ '''
 
 from collections import namedtuple
 
+
 Card = namedtuple('Card','rank suit')
 
 class FrenchDeck:
@@ -25,5 +26,12 @@ class FrenchDeck:
 # number of cards in French Deck
 deck = FrenchDeck()
 print(len(deck))
+print('''
+      ''')
+
+# reading both first and last cards in the Deck
+
+print(deck[0]) # first card
+print(deck[-1]) # last card
 print('''
       ''')
