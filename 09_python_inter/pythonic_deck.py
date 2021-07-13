@@ -20,3 +20,10 @@ class FrenchDeck:
 
     def __getitem__(self, position):
         return self._cards[position]
+
+
+# number of cards in French Deck
+deck = FrenchDeck()
+print(len(deck))
+print('''
+      ''')
