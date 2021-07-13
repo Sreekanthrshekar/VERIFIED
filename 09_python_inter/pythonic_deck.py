@@ -13,8 +13,8 @@ class FrenchDeck:
     suits = 'spades clubs diamonds hearts'.split()
 
     def __init__(self):
-        self._cards = [Card(rank,suit) for rank in self.ranks
-                       for suit in self.suits]
+        self._cards = [Card(rank,suit) for rank in self.suits
+                       for suit in self.ranks]
 
     def __len__(self):
         return len(self._cards)
@@ -43,3 +43,6 @@ print(choice(deck))
 print(choice(deck))
 print('''
       ''')
+
+# first five cards
+print(deck[:5])
