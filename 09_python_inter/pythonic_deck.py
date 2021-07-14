@@ -72,3 +72,8 @@ print('''
 
 # Verifying presence of a card in the Deck
 print(Card('2','spades') in deck)
+print('''
+      ''')
+
+# creating dict easily
+suit_dicts = dict(spades =3,hearts=2,diamonds=1,clubs=0) #
