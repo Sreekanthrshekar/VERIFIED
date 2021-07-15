@@ -1,5 +1,7 @@
 ''' This document deals with sorting lists, tuples and objects '''
 
+from operator import attrgetter
+
 li =[2,5,7,3,1,9,4,6]
 # Sort the list in ascending order
 # method 1
@@ -90,4 +92,10 @@ print('')
 # Method 2
 sorted_employees2 = sorted(employees, key = lambda e:e.name)
 print(sorted_employees2)
+print('')
+
+# Method 3
+
+sorted_employees3 = sorted(employees, key=attrgetter('name'))
+print(sorted_employees3)
 print('')
