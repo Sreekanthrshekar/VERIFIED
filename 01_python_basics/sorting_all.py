@@ -99,3 +99,8 @@ print('')
 sorted_employees3 = sorted(employees, key=attrgetter('name'))
 print(sorted_employees3)
 print('')
+
+# sorting using different attribute and in descending order
+sorted_employees4 = sorted(employees, key=attrgetter('salary'), reverse=True)
+print(sorted_employees4)
+print('')
