@@ -36,3 +36,12 @@ print('')
 desc_sorted_tup = sorted(tup1, reverse=True) # output will be a list; not tuple
 print('sorted tuple in descending oder:\n', desc_sorted_tup)
 print('')
+
+# to obtain a tuple after sorting
+tup1= (2,5,7,3,1,9,4,6)
+sorted_tup = tuple(sorted(tup1)) # typecasting as tuple
+print('sorted tuple:\n', sorted_tup)
+print('')
+desc_sorted_tup = tuple(sorted(tup1, reverse=True)) # typecasting as tuple
+print('sorted tuple in descending oder:\n', desc_sorted_tup)
+print('')
