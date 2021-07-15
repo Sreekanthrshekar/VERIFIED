@@ -45,3 +45,14 @@ print('')
 desc_sorted_tup = tuple(sorted(tup1, reverse=True)) # typecasting as tuple
 print('sorted tuple in descending oder:\n', desc_sorted_tup)
 print('')
+
+# sorting using absolute value
+li3 =[-2,1,5,-4,8,-6]
+
+sorted_li3 = sorted(li3)
+print('sorted list:\n', sorted_li3)
+print('')
+
+sorted_li3_abs = sorted(li3, key=abs)
+print('sorted list:\n', sorted_li3_abs)
+print('')
