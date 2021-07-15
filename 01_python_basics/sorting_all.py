@@ -12,3 +12,14 @@ print('')
 li.sort()
 print('sorted list:\n', li )
 print('')
+
+# sorting list in descending order
+li2 =[2,5,7,3,8,1,9,4,6]
+# method 1
+desc_sorted_li = sorted(li2, reverse=True)
+print('sorted list in descending oder:\n', desc_sorted_li)
+print('')
+# method 2
+li2.sort(reverse=True)
+print('sorted list in descending oder:\n', li2)
+print('')
