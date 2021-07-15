@@ -56,3 +56,38 @@ print('')
 sorted_li3_abs = sorted(li3, key=abs)
 print('sorted list:\n', sorted_li3_abs)
 print('')
+
+# sorting class instances
+
+class Employee:
+    ''' This class represents each emplyee by their name, age and salary'''
+
+    def __init__(self,name,age,salary):
+        self.name = name
+        self.age = age
+        self.salary = salary
+
+    def __repr__(self):
+        return '({},{},${})'.format(self.name,self.age,self.salary)
+
+
+e1 = Employee('Sree',35,2500000)
+e2 = Employee('Jenny',28,900000)
+e3 = Employee('David',31, 1200000)
+
+employees = [e1,e2,e3]
+
+# Method 1
+
+def sort_emp(emp):
+    ''' returns employee name'''
+    return emp.name
+sorted_employees1 = sorted(employees, key = sort_emp)
+
+print(sorted_employees1)
+print('')
+
+# Method 2
+sorted_employees2 = sorted(employees, key = lambda e:e.name)
+print(sorted_employees2)
+print('')
