@@ -1,4 +1,4 @@
-''' This document demonstrates dictionary comprehension ''' 
+''' This document demonstrates dictionary comprehension '''
 
 names = [
     'Bruce',
